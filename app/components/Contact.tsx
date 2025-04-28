@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, { useCallback, useEffect, useRef } from "react";
 import Reveal from "./Reveal";
-import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
+import { motion, useMotionValue } from "framer-motion";
 
 const Contact = () => {
   const ref = useRef<HTMLElement>(null);
@@ -28,9 +28,6 @@ const Contact = () => {
       window.removeEventListener("mousemove", updatePos);
     };
   }, [updatePos]);
-
-  // // Moved translateStyle outside any dynamic block
-  // const translateStyle = useMotionTemplate`translate(${posX}px, ${posY}px)`;
 
   return (
     <Reveal initialY={40} delay={0.5}>
