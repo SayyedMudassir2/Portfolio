@@ -1,0 +1,45 @@
+[
+  {
+    "thumbnail": "/weather_thumbnail.png",
+    "title": "Weather Dashboard",
+    "link": {
+      "label": "Weather.dash",
+      "url": "https://www.example.com"
+    },
+    "description": "Developed a Weather dashboard that fetches real-time data from a public API.",
+    "languageIcons": ["/css_icon.png", "/html_icon.png", "js_icon.png"]
+  },
+
+  {
+    "thumbnail": "/ecommerce_thumbnail.png",
+    "title": "E-commerce Platform",
+    "link": {
+      "label": "myecommerce.com",
+      "url": "https://www.example.com"
+    },
+    "description": "Developed a fully functional e-commerce platform with shopping cart, payment gateway integration and user authentication.",
+    "languageIcons": ["/css_icon.png", "/html_icon.png", "js_icon.png"]
+  },
+
+  {
+    "thumbnail": "/blog_thumbnail.png",
+    "title": "Blog CMS",
+    "link": {
+      "label": "blog.cms",
+      "url": "https://www.example.com"
+    },
+    "description": "Created a content management system for blogging with features like post management and comment moderation.",
+    "languageIcons": ["/js_icon.png", "/html_icon.png"]
+  },
+
+  {
+    "thumbnail": "/task_thumbnail.png",
+    "title": "Task Management App",
+    "link": {
+      "label": "tasssks.com",
+      "url": "https://www.example.com"
+    },
+    "description": "Developed a task management application with features such as tsak catogerization, deadline tracking and notificaion alerts.",
+    "languageIcons": ["/ts_icon.png", "go_icon.png"]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "image": "/user_1.png",
+    "name": "Samantha Lee",
+    "role": "Senior Software Engineer @ Catalog io",
+    "description": "Even as a junior software engineer, Samantha demonstrated an exceptional ability to solve complex problems. Her attention to detail and willingness to go the extra mile helped us meet critical deadlines."
+  },
+  {
+    "image": "/user_2.png",
+    "name": "Michael Nguyen",
+    "role": "CTO @ Command R",
+    "description": "What sets Michael Nguyen apart is his relentless drive for excellence. He consistently exceeds expectations, whether it's through his deep technical expertise or his ability to collaborate effectively across teams."
+  },
+  {
+    "image": "/user_3.png",
+    "name": "David Kim",
+    "role": "Technical Lead @ Circooles",
+    "description": "David brings a rare combination of technical skill and creative thinking to every project. He has an innate ability to understand the client's needs and translate them into innovative solutions."
+  }
+]
