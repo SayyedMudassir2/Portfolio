@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import Reveal from "./Reveal";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 
@@ -10,13 +10,16 @@ const Contact = () => {
   const posX = useMotionValue(0);
   const posY = useMotionValue(0);
 
-  const updatePos = (e: MouseEvent) => {
-    if (!ref.current) return;
+  const updatePos = useCallback(
+    (e: MouseEvent) => {
+      if (!ref.current) return;
 
-    const { top, left } = ref.current.getBoundingClientRect();
-    posX.set(e.x - left);
-    posY.set(e.y - top);
-  };
+      const { top, left } = ref.current.getBoundingClientRect();
+      posX.set(e.x - left);
+      posY.set(e.y - top);
+    },
+    [posX, posY]
+  );
 
   useEffect(() => {
     window.addEventListener("mousemove", updatePos);
@@ -24,10 +27,10 @@ const Contact = () => {
     return () => {
       window.removeEventListener("mousemove", updatePos);
     };
-  }, []);
+  }, [updatePos]);
 
-  // Moved translateStyle outside any dynamic block
-  const translateStyle = useMotionTemplate`translate(${posX}px, ${posY}px)`;
+  // // Moved translateStyle outside any dynamic block
+  // const translateStyle = useMotionTemplate`translate(${posX}px, ${posY}px)`;
 
   return (
     <Reveal initialY={40} delay={0.5}>

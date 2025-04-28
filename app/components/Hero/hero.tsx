@@ -9,7 +9,7 @@ const Hero = () => {
         <Reveal initialX={-25}>
           <h1 className="text-2xl/1 text-center font-semibold block md:text-[40px] md:text-start md:inline">
             <span className="-ml-3">👋</span> Hello!
-            <br /> I'm Sayyed Mudassir, I'm a <br />
+            <br /> I&#8217;m Sayyed Mudassir, I&#8217;m a <br />
             <span className="block text-[27px] highlight mt-2 md:text-[45px] md:inline md:mt-0">
               Software Engineer
             </span>
@@ -26,7 +26,7 @@ const Hero = () => {
             className="self-center bg-primary text-white p-2.5 rounded flex gap-2.5 items-center text-sm md:self-start md:text-xl transform transition-transform duration-200 hover:scale-105"
             href="mailto:sayyedmudassir443@gmail.com"
           >
-            Let's Connect{" "}
+            Let&#8217;s Connect{" "}
             <Image
               src="/arrow_right_icon.svg"
               alt="Arrow Right Icon"
